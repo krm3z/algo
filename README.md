@@ -25,7 +25,6 @@ Parcourir un tableau d'entier et afficher à la fin du parcours le nombre d'enti
 
 ## Pseudocode - Algorithme de comptage des nombres pairs et impairs
 
-```
 FONCTION compterPairsImpairs(Tableau)
     countpair = 0        // Compteur de nombres pairs intialisé à 0
     countimpair = 0      // Compteur de nombres impairs intialisé à 0
@@ -42,7 +41,7 @@ FIN FONCTION
 
 PROGRAMME PRINCIPAL
     tailles = [100, 1000, 10000, 50000, 100000, 500000, 1000000]
-    
+
     pour chaque n dans tailles
         // Création et remplissage du tableau
         donnees = créer un tableau de n entiers
@@ -62,7 +61,6 @@ PROGRAMME PRINCIPAL
         afficher "--------------------------------------"
     fin pour
 FIN PROGRAMME
-```
 
 ## Description
 
@@ -75,46 +73,68 @@ Cet algorithme teste la performance du comptage de nombres pairs et impairs sur 
 
 ## Utilisation
 
-```bash
+bash
 go run main.go
-```
 
 ## Exemple de sortie
 
-```
+markdown
+
 Taille: 100 → Temps: 1.2µs
+
 Nombre total de Pairs =  52
+
 Nombre total d'Impairs =  48
+
 --------------------------------------
+
 Taille: 1000 → Temps: 5.8µs
+
 Nombre total de Pairs =  503
+
 Nombre total d'Impairs =  497
+
 --------------------------------------
 Taille: 10000 → Temps: 58µs
+
 Nombre total de Pairs =  5014
+
 Nombre total d'Impairs =  4986
+
 --------------------------------------
 Taille: 50000 → Temps: 290µs
+
 Nombre total de Pairs =  24987
+
 Nombre total d'Impairs =  25013
+
 --------------------------------------
 Taille: 100000 → Temps: 580µs
+
 Nombre total de Pairs =  49952
+
 Nombre total d'Impairs =  50048
+
 --------------------------------------
 Taille: 500000 → Temps: 2.9ms
+
 Nombre total de Pairs =  249876
+
 Nombre total d'Impairs =  250124
+
 --------------------------------------
 Taille: 1000000 → Temps: 5.8ms
+
 Nombre total de Pairs =  500234
+
 Nombre total d'Impairs =  499766
+
 --------------------------------------
-```
 
 ## Analyse de performance
 
 L'algorithme démontre une **croissance linéaire O(n)** parfaite :
+
 - Temps double quand la taille double
 - Performance exceptionnelle : ~5.8ns par élément
 - Scalabilité confirmée jusqu'à 1 million d'éléments
