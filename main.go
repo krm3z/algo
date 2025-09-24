@@ -7,17 +7,17 @@ import (
 )
 
 func compterPairsImpairs(Tableau []int) (int, int) {
-    countPair := 0 // Compteur de nombres pairs intialisé à 0
-    countImpair := 0 // Compteur de nombres impairs intialisé à 0
+    countpair := 0 // Compteur de nombres pairs intialisé à 0
+    countimpair := 0 // Compteur de nombres impairs intialisé à 0
 
     for i := 0; i < len(Tableau); i++ { // pour counter allant de 0 à (exclu) taille (tableau) par pas de 1  
         if Tableau[i]%2 == 0 { //si tableau [counter] % 2 == 0 alors
-            countPair++ //incrémenter le compteur de nombres pairs de 1
+            countpair++ //incrémenter le compteur de nombres pairs de 1
         } else { //sinon
-            countImpair++ //incrémenter le compteur de nombres impairs de 1
+            countimpair++ //incrémenter le compteur de nombres impairs de 1
         }
     }
-    return countPair, countImpair //retourner compteur de nombres pairs, compteur de nombres impairs
+    return countpair, countimpair //retourner compteur de nombres pairs, compteur de nombres impairs
 }
 
 func main() {
@@ -29,10 +29,10 @@ func main() {
 	fmt.Println("Tableau :", donnees)
 
 	debut := time.Now()
-	pairs, impairs := compterPairsImpairs(donnees)
+	nbrpairs, nbrimpairs := compterPairsImpairs(donnees)
 	duree := time.Since(debut)
 
-	fmt.Println("Nombre total de Pairs = ", pairs)
-	fmt.Println("Nombre total d'Impairs = ", impairs)
+	fmt.Println("Nombre total de Pairs = ", nbrpairs)
+	fmt.Println("Nombre total d'Impairs = ", nbrimpairs)
 	fmt.Println("Temps d'exécution   de l'algorithme :", duree)
 }
