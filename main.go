@@ -20,7 +20,7 @@ func compterPairsImpairs(Tableau []int) (int, int) {
 	return countpair, countimpair //retourner compteur de nombres pairs, compteur de nombres impairs
 }
 func main() {
-	tailles := []int{100, 1000, 10000, 50000, 100000, 500000, 1000000}
+	tailles := []int{10,100, 1000, 10000, 100000, 1000000, 10000000, 100000000}
 
 	for _, n := range tailles {
 		donnees := make([]int, n)
